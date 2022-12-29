@@ -21,16 +21,34 @@ function playRound(playerSelection, computerSelection) {
     }
 
     if(playerWin) {
-        return "Player won the round!";
+        return "player";
     }
     else if(tie) {
-        return "It's a tie";
+        return "tie";
     }
     else {
-        return "Computer won the round!";
+        return "computer";
     }
 }
 
 function game() {
-    
+    console.log("Let the game begin...");
+
+    let pWin=0, cWin=0;
+
+    for(let i=1;i<=5;i++) {
+        let playerSelection = prompt("Enter rock, paper or scissor:").toLowerCase();
+        let computerSelection = getComputerChoice();
+        let status = playRound(playerSelection,computerSelection);
+        if(status === "player") {
+            console.log("Player won the round!");
+            pWin++;
+        }
+        else if(status === "computer") {
+            console.log("Computer won the round!");
+        }
+        else {
+            console.log("It's a tie!");
+        }
+    }
 }
