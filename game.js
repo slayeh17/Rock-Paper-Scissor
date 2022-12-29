@@ -46,9 +46,23 @@ function game() {
         }
         else if(status === "computer") {
             console.log("Computer won the round!");
+            cWin++;
         }
         else {
             console.log("It's a tie!");
         }
+    }
+
+    if(pWin > cWin) {
+        console.log("");
+        console.log("Player WON");
+    }
+    else if(pWin == cWin) {
+        console.log("");
+        console.log("TIE");
+    }
+    else {
+        console.log("");
+        console.log("Computer WON");
     }
 }
