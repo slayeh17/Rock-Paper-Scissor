@@ -54,18 +54,18 @@ function game() {
     }
 
     if(pWin > cWin) {
+        alert("Player WON");
         console.log("");
         console.log("Player WON");
-        alert("Player WON");
     }
     else if(pWin == cWin) {
+        alert("TIE");
         console.log("");
         console.log("TIE");
-        alert("TIE");
     }
     else {
+        alert("Computer WON");
         console.log("");
         console.log("Computer WON");
-        alert("Computer WON");
     }
 }
