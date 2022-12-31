@@ -56,13 +56,16 @@ function game() {
     if(pWin > cWin) {
         console.log("");
         console.log("Player WON");
+        alert("Player WON");
     }
     else if(pWin == cWin) {
         console.log("");
         console.log("TIE");
+        alert("TIE");
     }
     else {
         console.log("");
         console.log("Computer WON");
+        alert("Computer WON");
     }
 }
