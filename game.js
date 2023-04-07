@@ -79,12 +79,14 @@ function checkWhoWon() {
     whoWon.style.visibility = 'visible';
     if (pWin > cWin) {
         console.log('Player WON');
-        whoWon.innerHTML = `Player Won!🥳`;
+        whoWon.innerHTML = `<p>Player Won!🥳</p>
+                            <p>Score is Player - ${pWin} and Computer - ${cWin}</p>`;
         // alert('Player WON');
     }
     else {
         console.log('Computer WON');
-        whoWon.innerHTML = `Computer Won!🤖`;
+        whoWon.innerHTML = `<p>Computer Won!🤖</p>
+                            <p>Score is Player - ${pWin} and Computer - ${cWin}</p>`;
         // alert('Computer WON');
     }
 }
